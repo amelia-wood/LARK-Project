@@ -1,2 +1,4 @@
 # LARK-Project
-LARK Project to teach new users Linux
+Welcome!
+The goal of this game is to teach you the basics of LINUX.
+To begin …
