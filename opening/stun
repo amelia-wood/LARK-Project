@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+cat << EOF
+This spell will momentarily stun your enemy!
+
+Add it to your spellbook by creating a variable and adding the spell to it, like this:
+
+export S=stun,\$S
+
+You can always see which spells you have by using this command:
+
+echo \$S
+EOF

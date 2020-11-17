@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cat << EOF
+This spell will engulf your enemy in flames!
+
+Add it to your spellbook by creating a variable and adding the spell to it, like this 
+
+export S=fire,\$S
+
+You can always see which spells you have by using this command:
+
+echo \$S
+EOF
