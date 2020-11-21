@@ -17,7 +17,7 @@ Then press Enter or Return.
 Type the command 'cat beginning' and now the game has begun!
 
 
-**Alternate way to start the game:**
+### **Alternate way to start the game:**
 
 If the directions above give you trouble try the following:
 
