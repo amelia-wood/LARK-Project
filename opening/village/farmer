@@ -1,0 +1,77 @@
+#!/bin/bash
+
+cat << EOF
+
+You approach a man tending to his farm.
+
+“Why hello there, young fellow! You must be that wizard who’s gonna help us!” 
+
+The farmer motions you to sit down and talk with him.
+EOF
+
+echo ""
+echo -n "Do you speak with the farmer? "
+
+read choice 
+
+if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
+	cat << EOF
+
+“Nowadays, folks all over are fearing over all these monsters gone crazy! 
+The king’s been sending out his forces to help, but all the villages who’ve 
+been ‘helped’ mysteriously haven’t been heard from in weeks. I fear this mess 
+runs deeper than just some uproar in creatures…”
+
+The farmer suddenly remembers something, as if it’s really important and has 
+to drop everything to get it.
+
+“One moment please, hero… I believe I might actually have something 
+to help you on your journey. Wait here for a moment, please?”
+EOF
+
+elif [ "$choice" = "no" -o "$choice" = "No" ]; then
+	cat << EOF
+
+“I must have been mistaken and thought you were someone else-- my apologies.”
+
+The farmer gets back to his business.
+EOF
+
+fi
+
+echo ""
+echo -n "Do you wait for the farmer to return? "
+
+read choice
+
+if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
+        cat << EOF
+
+After a few minutes of waiting and hearing things fall over inside of the 
+farmer’s home, he finally reappears with a dusty book in hand. 
+
+“I thought I’d lost it! This is an old keepsake of mine, my great-grandfather’s 
+magical spellbook. He was a wizard, just like you and our king are. Except, 
+back then there were a whole lot more of you folks. No one knows why finding 
+your kind are so few and far between, but…” 
+
+He looks lost in thought, but snaps out of it. 
+
+“Anyways-- I believe this could be useful to you, a magical tome which can 
+teach you how to use the spell Flash Freeze! It could save you in a pinch!”
+
+The farmer hands you the magical tome, and you read through it.
+
+
+Make sure you add this one to your spellbook! Use the command:
+
+export Spells=freeze,\$Spells
+EOF
+
+elif [ "$choice" = "no" -o "$choice" = "No" ]; then
+        cat << EOF
+
+“Very well. Good luck, hero!”
+EOF
+
+fi
