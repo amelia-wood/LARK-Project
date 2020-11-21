@@ -6,10 +6,14 @@ Before you begin, here are some tips that will be useful on your journey.
 
 	- You can cast a spell or fight a monster using the “./” command.
 
-		- We recommend always casting the spell first as it will be added to your spell book.
+		- We recommend always casting the spell first so you can 
+		add it to your spell book.
 
-	- If you’d like to explore a new area, use cd to change your current location.
+	- If you’d like to explore a new area, use cd to change your current 
+	location.
 
+	- If you ever get stuck, use the command "cat pixie". The pixie will 
+	remind you of everything you've learned so far.
 
 To begin, try out the spells you see and then move on to the training dummy.
 

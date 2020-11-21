@@ -3,7 +3,8 @@
 cat << EOF
 This spell will engulf your enemy in flames!
 
-Add it to your spellbook by creating a variable and adding the spell to it, like this 
+Add it to your spellbook by creating a variable and adding the spell to it, 
+like this: 
 
 export S=fire,\$S
 

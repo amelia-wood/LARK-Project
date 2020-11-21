@@ -2,12 +2,13 @@
 
 cat << EOF
 
-WAIT!! Before you continue to your fight with the training dummy, be sure you have taken a look and added the other spells that are here to your spellbook! 
-If you have then please continue to your doom.
+WAIT!! Before you continue to your fight with the training dummy, be sure 
+you have taken a look and added the other spells that are here to your 
+spellbook! If you have then please continue to your doom.
 
 
-A training dummy stands before you. It emits an unnatural aura, as if this will be the 
-most powerful enemy you shall face. What do you do?
+A training dummy stands before you. It emits an unnatural aura, as if 
+this will be the most powerful enemy you shall face. What do you do?
 EOF
 
 echo ""
@@ -21,19 +22,20 @@ read choice
 
 if [ "$choice" = "stun" ]; then
 	cat << EOF
-A bright flash erupts from the tip of your wand and stuns your enemy. Well done!
+A bright flash erupts from the tip of your wand and stuns your 
+enemy. Well done!
 EOF
 
 elif [ "$choice" = "fire" ]; then
 	cat << EOF
-The air begins to crackle and your enemy is engulfed in flames. All that is left is a
-pile of ashes. Well done!
+The air begins to crackle and your enemy is engulfed in flames. All that 
+is left is a pile of ashes. Well done!
 EOF
 
 elif [ "$choice" = "beg" ]; then
 	cat << EOF
-You get on your knees before the training dummy and grovel, begging to walk away with 
-your life. The training dummy allows this, and you walk away unharmed.
+You get on your knees before the training dummy and grovel, begging to walk 
+away with your life. The training dummy allows this, and you walk away unharmed.
 EOF
 
 fi
