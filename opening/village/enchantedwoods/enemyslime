@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat << EOF
+
+An angry looking red slime hops toward you! It's your first real opponent,
+what do you do?
+EOF
+
+
