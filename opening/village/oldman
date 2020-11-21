@@ -1,0 +1,36 @@
+#!/bin/bash
+
+cat << EOF
+
+You approach a distraught-looking elderly villager. "You must help me, wizard!
+A group of goblins took away my grandson and several other young folks from
+the village to a hidden cave.
+EOF
+
+echo ""
+echo -n "Please, will you save them? "
+
+read choice 
+
+if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
+	cat << EOF
+
+Bless you, great hero! Here, please take my family's sacred heirloom. 
+
+You recieved a magical sword! Let's go ahead and add this to our belongings
+so we don't leave it behind. Use the following command:
+
+export Pockets=magical_sword,\$Pockets
+
+To view your pockets, use the command
+
+echo \$Pockets
+EOF
+
+elif [ "$choice" = "no" -o "$choice" = "No" ]; then
+	cat << EOF
+
+The old man nods, and wishes you safe travels on you journey.
+EOF
+
+fi
