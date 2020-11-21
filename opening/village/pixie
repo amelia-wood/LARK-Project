@@ -5,7 +5,11 @@ if you're stuck!
         - Use the command "ls" to see the nearby areas, spells, and beasts
         to fight.
 
-        - To cast a spell or fight a monster, use the "./" command.
+        - To cast a spell, talk to someone, or fight a monster, use 
+	the "./" command.
 
         - If you ever want to see the contents of your spellbook, use the
-        command "echo $S".
+        command "echo $Spells".
+
+	-If you ever want to see what you have in your pockets, use the 
+	command "echo $Pockets".
