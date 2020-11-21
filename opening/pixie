@@ -9,4 +9,5 @@ if you're stuck!
 	- To cast a spell or fight a monster, use the "./" command.
 
 	- If you ever want to see the contents of your spellbook, use the
-	command "echo $S".
+	command "echo $Spells".
+
