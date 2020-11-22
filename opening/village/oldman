@@ -2,20 +2,21 @@
 
 cat << EOF
 
-You approach a distraught-looking elderly villager. "You must help me, wizard!
-A group of goblins took away my grandson and several other young folks from
-the village to a hidden cave.
+You approach a distraught-looking elderly villager. 
+
+"You must help me, wizard! A group of goblins took away my grandson and 
+several other young folks from the village to a hidden cave."
 EOF
 
 echo ""
-echo -n "Please, will you save them? "
+echo -n "'Please, will you save them?' "
 
 read choice 
 
 if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
 	cat << EOF
 
-Bless you, great hero! Here, please take my family's sacred heirloom. 
+"Bless you, great hero! Here, please take my family's sacred heirloom." 
 
 You recieved a magical sword! Let's go ahead and add this to our belongings
 so we don't leave it behind. Use the following command:

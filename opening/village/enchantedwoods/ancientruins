@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cat << EOF
+
+In wandering the forest, you come across a large monument which looks like 
+it served some ancient purpose, whether religious or magical. The sigils 
+upon the wall are written in a foreign language, but you are able to decipher 
+what it roughly means.
+
+'The way through the forest is seen by those gifted with magic. Try using 
+ls -a to see what is hidden!'
+
+To see past what is seen just by ls, use ls -a to find any hidden secrets!
+EOF

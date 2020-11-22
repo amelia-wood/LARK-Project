@@ -1,0 +1,34 @@
+#!/bin/bash
+
+cat << EOF
+
+The thick woods of the enchanted forest are easy to get lost in, but 
+you find a clearing with the spirit of a child crying alone.
+EOF
+
+echo ""
+echo -n "Do you approach the spirit? "
+
+read choice
+
+if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
+	cat << EOF
+
+You approach the lost spirit, and hug the child. When this happens, a 
+bright light glows from the child and it disappears. In its place, another 
+magical tome lies in its place. After reading through it, the magical tome 
+is for the spell sleep. 
+
+To add this to your spellbook, use the command: 
+
+export Spells=sleep,\$Spells
+EOF
+
+elif [ "$choice" = "no" -o "$choice" = "No" ]; then
+	cat << EOF
+
+You leave the child alone, and continue looking for a way onward out
+of the forest.
+EOF
+
+fi
