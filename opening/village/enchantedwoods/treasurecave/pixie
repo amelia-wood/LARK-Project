@@ -6,6 +6,9 @@ if you're stuck!
         - Use the command "ls" to see the nearby areas, spells, and beasts
         to fight.
 
+		- You can also use the command "ls -a" to see things that
+		are hidden around you. 
+
         - To cast a spell, talk to someone, or fight a monster, use 
 	the "./" command.
 

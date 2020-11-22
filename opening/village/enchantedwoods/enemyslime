@@ -2,8 +2,76 @@
 
 cat << EOF
 
+Hint from Pearl the Pixie:
+
+"Hey Wizard! Before you go and fight this beast, make sure you've had a 
+good look around and added all the spells you can to your spellbook! You'll 
+stand a better chance at defeating them! Good Luck!"
+
+
 An angry looking red slime hops toward you! It's your first real opponent,
 what do you do?
 EOF
 
+echo ""
+echo "Here is a list of the spells you have learned so far:"
+echo "$Spells"
+echo ""
+echo -n "Make your choice: "
 
+read choice
+
+if [ "$choice" = "stun" -o "$choice" = "Stun" ]; then
+	cat << EOF
+
+A bright flash erupts from the tip of your wand and stuns your enemy.
+
+Congratulations! The enemy slime has been defeated, and it dropped some 
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+EOF
+
+elif [ "$choice" = "fire" -o "$choice" = "Fire" ]; then
+	cat << EOF
+
+The air begins to crackle and your enemy is engulfed in flames. All that
+is left is a pile of ashes.
+
+Congratulations! The enemy slime has been defeated, and it dropped some
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+
+EOF
+
+elif [ "$choice" = "freeze" -o "$choice" = "Freeze" ]; then
+	cat << EOF
+
+A fog envelops below your enemy and ice shocks out of the ground and 
+surrounds your enemy, completely immobilizing them.
+
+Congratulations! The enemy slime has been defeated, and it dropped some
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+
+EOF
+
+elif [ "$choice" = "sleep" -o "$choice" = "Sleep" ]; then
+	cat << EOF
+
+The eyes of your enemy begin to glaze over as sleep consumes them. Hurry up
+and get out of here before they wake up!
+EOF
+
+elif [ "$choice" != "$Spells" ]; then
+	cat << EOF
+
+The enemy slime strikes you down! You have been defeated, but it is not 
+the end! You can challenge your enemy again by using the command:
+
+./enemyslime
+EOF
+
+fi
