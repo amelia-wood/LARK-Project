@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cat << EOF
+
+A friendly, non-harmful looking baby slime hops to you. The slime looks like 
+it wants to show you something.
+EOF
+
+echo -n "Do you follow the slime? "
+
+read choice
+
+if [ "$choice" = "yes" -o "$choice" = "Yes" ]; then
+	cat << EOF
+
+The slime directs you to the way out of the forest. You must enter a cave 
+that cuts to the other side of the mountain. Anything could be inside, so
+be careful!
+
+To enter the cave, use the command:
+
+cd treasurecave
+EOF
+
+elif [ "$choice" = "no" -o "$choice" = "No" ]; then
+	cat << EOF
+
+The slime hops in place, waiting for you to follow it. 
+EOF
+
+fi

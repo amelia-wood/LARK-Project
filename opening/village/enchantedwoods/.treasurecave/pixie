@@ -1,0 +1,19 @@
+Hello Wizard!
+
+My name is Pearl the Helpful Pixie! Below are some helpful reminders
+if you're stuck!
+
+        - Use the command "ls" to see the nearby areas, spells, and beasts
+        to fight.
+
+		- You can also use the command "ls -a" to see things that
+		are hidden around you. 
+
+        - To cast a spell, talk to someone, or fight a monster, use 
+	the "./" command.
+
+        - If you ever want to see the contents of your spellbook, use the
+        command "echo $Spells".
+
+	-If you ever want to see what you have in your pockets, use the 
+	command "echo $Pockets".
