@@ -17,4 +17,92 @@ begin with!”
 
 It’s quite clear the king has gone mad, but you’re not sure what it could be. 
 Either way, looks like the final battle of your journey stands before you.
+
+
+The wizard king charges up a fire-like spell from his wand. To counter him, use the same type of spell!
 EOF
+
+echo ""
+echo "$Spells"
+echo ""
+echo -n "Make your choice: "
+
+read choice
+
+if [ "$choice" = "fire" -o "$choice" = "Fire" ]; then
+	cat << EOF
+
+As the wizard king shoots a beam of fire at you, you counter with an equally 
+strong blast directed back. Yours and the wizard king’s magic collide causing 
+a massive explosion, destroying the walls of the throne room around you and 
+only leaving the king and yourself disoriented from the blast.
+EOF
+
+cat << EOF
+
+Looking disoriented from the explosion, the king hurries before anything to
+put his crown back on.
+
+“You will not defeat me, usurper!”
+
+Charging up another attack, this time the king is focusing all of his energy
+into one point in a left-effort attack. Try to interrupt his focus!
+EOF
+
+echo ""
+echo "$Spells"
+echo ""
+echo -n "Make your choice: "
+
+read choice
+
+if [ "$choice" = "stun" -o "$choice" = "Stun" ]; then
+        cat << EOF
+
+A bright light shines at the king, disorienting him and knocking him off his
+feet.
+
+“I surrender! I surrender…”
+
+The crown on the king’s head crumbles, and the king vanishes into dust.
+
+
+You have completed your journey! Your score is:
+
+$Pockets + $Spells
+
+
+                                THE END
+EOF
+
+elif [ "$choice" != "stun" -o "$choice" = "Stun" ]; then
+        cat << EOF
+
+A magical barrier protects the king from being interrupted while channeling
+his spell, nullifying your attack!
+
+“You will go down with me!!!”
+
+A beam of unlimited magical power emits from the king towards you, destroying
+you instantly.
+
+You have been defeated! To rechallenge the wizard king, use the command:
+
+./wizardking
+EOF
+
+fi
+
+
+if [ "$choice" != "fire" -o "$choice" = "Fire" ]; then
+	cat << EOF
+
+The wizard king fires his spell at you, and you are defenseless before his 
+magical prowess. You have been defeated! 
+
+To rechallenge the wizard king, use the command:
+
+./wizardking
+EOF
+
+fi
