@@ -2,3 +2,101 @@
 
 cat << EOF
 
+Hint from Pearl the Pixie:
+
+"Hey Wizard! Before you go and fight this beast, make sure you've had a
+good look around and added all the spells and items you can to your spellbook 
+and pockets! You'll stand a better chance at defeating them! Good Luck!"
+
+
+A mischievous-looking goblin runs at you with a pouch of gold hoisted over its back.
+Could this be the goblin that kidnapped that old man's grandson?
+
+What are you going to do?
+EOF
+
+echo ""
+echo "Here is a list of the spells you have learned so far:"
+echo "$Spells"
+echo "As well as what is in your pockets:"
+echo "$Pockets"
+echo ""
+echo -n "Make your choice: "
+
+read choice
+
+if [ "$choice" = "magical_sword" -o "$choice" = "Magical_Sword" -o "$choice" = "magical sword" -o "$choice" = "Magical Sword" ]; then
+	cat << EOF
+
+As your foe sprints at you, you pull out the blade from the old man in the 
+village. It glows with magical power, and you strike the goblin! It falls before 
+you, dropping its pouch full of likely stolen goods. After retrieving the stolen 
+goods, you choose to follow the path the goblin was running from to see where it 
+came from. At the end of the path, you see a group of children being held captive. 
+
+“Help us, hero! We were taken by the goblins when we were out playing, my grandfather 
+is probably worried sick about where we are…”
+
+After releasing the children and the old farmer’s grandson, one of them approaches 
+you before going back home. 
+
+“Please, take this with you… it may not be worth much but it’s a good luck charm, 
+you surely will need it on the road ahead.” 
+
+To add the good luck charm to your inventory use the command: 
+
+export Pockets=goodluckcharm,\$Pockets
+EOF
+
+elif [ "$choice" = "stun" -o "$choice" = "Stun" ]; then
+	cat << EOF
+
+A bright flash erupts from the tip of your wand and stuns your enemy.
+
+Congratulations! The goblin has been defeated, and it dropped some
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+EOF
+
+elif [ "$choice" = "fire" -o "$choice" = "Fire" ]; then
+	cat << EOF
+
+The air begins to crackle and your enemy is engulfed in flames. All that
+is left is a pile of ashes.
+
+Congratulations! The goblin has been defeated, and it dropped some
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+EOF
+
+elif [ "$choice" = "freeze" -o "$choice" = "Freeze" ]; then
+	cat << EOF
+
+A fog envelops below your enemy and ice shocks out of the ground and
+surrounds your enemy, completely immobilizing them.
+
+Congratulations! The goblin has been defeated, and it dropped some
+golden coins. To add these to your inventory use the command:
+
+export Pockets=coins,\$Pockets
+EOF
+
+elif [ "$choice" = "sleep" -o "$choice" = "Sleep" ]; then
+	cat << EOF
+
+The eyes of your enemy begin to glaze over as sleep consumes them. Hurry up
+and get out of here before they wake up!
+EOF
+
+elif [ "$choice" != "$Spells" ]; then
+	cat << EOF
+
+The goblin strikes you down! You have been defeated, but it is not
+the end! You can challenge you enemy again by using the command:
+
+./goblin
+EOF
+
+fi
