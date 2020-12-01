@@ -3,8 +3,8 @@
 cat << EOF
 
 As you explore deeper into the cave, you find a dragon. It seems the only way 
-out of here is to defeat the dragon. Choose wisely when it comes to which spells 
-you cast, as only certain spells will work against this foe.
+out of here is to defeat the dragon. Choose wisely when it comes to which 
+spells you cast, as only certain spells will work against this foe.
 EOF
 
 echo ""
@@ -14,4 +14,52 @@ echo -n "Make your choice: "
 
 read choice
 
+while [ "$choice" = "fire" -o "$choice" = "Fire" -o "$choice" = "stun" -o "$choie" = "Stun" ]; do
+	cat << EOF
 
+The spell you cast has no effect! Try another spell."
+EOF
+	echo ""
+	echo -n "Make your choice: "
+	read choice
+done
+
+
+if [ "$choice" = "freeze" -o "$choice" = "Freeze" ]; then
+	cat << EOF 
+
+You cast freeze, the dragon is flash-frozen in place, like a shell of ice 
+completely encased it. This won’t last for long, you’d better run past 
+before it breaks free!"
+
+To exit the cave before it's too late, use the command:
+
+cd .castle
+EOF
+
+
+elif [ "$choice" = "sleep" -o "$choice" = "Sleep" ]; then
+	cat << EOF
+
+You cast sleep, the dragon’s eyes begin drooping closed and it falls over, 
+making a loud THUD and shaking the cavern walls around you. Looks like the 
+cave system is going to fall apart, you’d best get moving before you become 
+stuck here!
+
+To exit the cave before it's too late, use the command:
+
+cd .castle
+EOF
+
+elif [ "$choice" != "$Spells" ]; then
+	cat << EOF
+
+The dragon seems humoured by your pitiful attempt of spellcasting, and 
+breathes a large wave of fire onto you! 
+
+You have been defeated, to face the dragon again use the command: 
+        
+./.dragon
+EOF
+
+fi
