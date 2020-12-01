@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cat << EOF
+
+Arriving at the king’s throne room, you notice no one is around but the king, 
+sitting in what can be considered a vacant castle.
+
+“Ah so you arrive at last! I’ve heard stories of your feats, great hero. The 
+people clearly see you as their champion, and great defender. But have you 
+considered what those you call monsters think of you?!”
+
+The king proceeds to go on a ten-minute rant about monsters’ rights and how 
+humans have claimed their ancestral lands.
+
+“...THEREFORE- I have taken it upon myself to take back what was never ours to 
+begin with!”
+
+It’s quite clear the king has gone mad, but you’re not sure what it could be. 
+Either way, looks like the final battle of your journey stands before you.
+EOF
