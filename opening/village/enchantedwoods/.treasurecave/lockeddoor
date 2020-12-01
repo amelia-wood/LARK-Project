@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cat << EOF
+
+Before you lies a locked door. You search your pockets for a key which might 
+open the locked handle, but find yourself key-less. There is no way you will 
+get through this door normally, unless…
+EOF
+
+echo "Do you: "
+echo ""
+echo "Pick the lock"
+echo ""
+echo "Leave"
+echo ""
+echo -n "Make your choice: "
+
+read choice
+
+if [ "$choice" = "pick the lock" -o "$choice" = "Pick the lock" -o "$choice" = "Pick the Lock" -o "$choice" = "pick lock" -o "$choice" = "Pick Lock" ]; then
+	cat << EOF
+
+After a few minutes of fiddling with the inside of the lock, you manage to pull 
+the door open. Expecting something worth your while on the other side, you are 
+disappointed as you find the room is a bedroom with not much to see inside. Upon 
+further investigation, you find a rare-looking amulet with a smiley face on it. 
+
+To add it to your inventory, us the command:
+
+export Pockets=amulet,\$Pockets
+EOF
+
+elif [ "$choice" = "Leave" -o "$choice" = "leave" ]; then
+	echo ""
+
+
+fi
