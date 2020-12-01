@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cat << EOF
+
+Exploring the king castle, you see the silhouette of a man in a dark corner. 
+
+You approach and see the man is… Professor Navarro? He smiles and gives you 
+two thumbs up. 
+
+“Congratulations on making it this far! You got this!”
+EOF
