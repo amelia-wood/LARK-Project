@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cat << EOF
+
+As you explore deeper into the cave, you find a dragon. It seems the only way 
+out of here is to defeat the dragon. Choose wisely when it comes to which spells 
+you cast, as only certain spells will work against this foe.
+EOF
+
+echo ""
+echo "$Spells"
+echo ""
+echo -n "Make your choice: "
+
+read choice
+
+
