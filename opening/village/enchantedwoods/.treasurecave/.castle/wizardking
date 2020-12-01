@@ -29,6 +29,20 @@ echo -n "Make your choice: "
 
 read choice
 
+if [ "$choice" != "fire" -o "$choice" = "Fire" ]; then
+	cat << EOF
+
+The wizard king fires his spell at you, and you are defenseless before his 
+magical prowess. You have been defeated! 
+
+To rechallenge the wizard king, use the command:
+
+./wizardking
+EOF
+
+fi
+
+
 while [ "$choice" = "fire" -o "$choice" = "Fire" ]; do
 	cat << EOF
 
@@ -94,16 +108,3 @@ EOF
 fi
 
 done
-
-if [ "$choice" != "fire" -o "$choice" = "Fire" ]; then
-	cat << EOF
-
-The wizard king fires his spell at you, and you are defenseless before his 
-magical prowess. You have been defeated! 
-
-To rechallenge the wizard king, use the command:
-
-./wizardking
-EOF
-
-fi
