@@ -10,7 +10,7 @@ Drag and drop the 'opening' directory into your terminal.
 
 It should look something like this:
 
-$ cd /home/your_username/Downloads/LARK_Project/opening
+$ cd /home/your_username/Downloads/LARK-Project/opening
 
 Then press Enter or Return.
 
@@ -25,7 +25,7 @@ Find and Download LARK_Project.
 
 In your terminal, use the "cd" command until you have the following path:
 
-$ cd /home/your_username/Downloads/LARK_Project/opening
+$ cd /home/your_username/Downloads/LARK-Project/opening
 
 Then press Enter or Return.
 
