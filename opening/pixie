@@ -1,3 +1,4 @@
+
 Hello Wizard!
 
 My name is Pearl the Helpful Pixie! Below are some helpful reminders 
@@ -10,4 +11,7 @@ if you're stuck!
 
 	- If you ever want to see the contents of your spellbook, use the
 	command "echo $Spells".
+
+        - To move from one area you can use the commands "cd" to move forward,
+        or "cd .." to move backward.
 

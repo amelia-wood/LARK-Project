@@ -11,5 +11,8 @@ if you're stuck!
         - If you ever want to see the contents of your spellbook, use the
         command "echo $Spells".
 
-	-If you ever want to see what you have in your pockets, use the 
+	- If you ever want to see what you have in your pockets, use the 
 	command "echo $Pockets".
+
+        - To move from one area you can use the commands "cd" to move forward,
+        or "cd .." to move backward.

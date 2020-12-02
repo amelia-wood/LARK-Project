@@ -1,3 +1,4 @@
+
 Welcome brave Wizard! Thank you for agreeing to help our people! 
 
 Before you begin, here are some tips that will be useful on your journey.
@@ -9,8 +10,9 @@ Before you begin, here are some tips that will be useful on your journey.
 		- We recommend always casting the spell first so you can 
 		add it to your spell book.
 
-	- If you’d like to explore a new area, use cd to change your current 
-	location.
+	- If you’d like to explore a new area, use the command "cd" to change 
+	your current location. If you would like to go back to a previous area,
+	use the command "cd .."
 
 	- If you ever get stuck, use the command "cat pixie". The pixie will 
 	remind you of everything you've learned so far.
